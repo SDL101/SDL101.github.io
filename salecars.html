@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Sale Cars</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>Sale Cars</h1>
+
+    [ <a href="cars.html">Cars</a> | <a href="employees.html">Employees</a> |
+    <a href="sale_cars.html">Sale cars</a> |
+    <a href="customers.html">Customers</a> | <a href="sales.html">Sales</a> ]
+    <div id="browse" style="display: block">
+      <p><strong>Sale Cars</strong></p>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th><a></a></th>
+          <th></th>
+          <th>sale id</th>
+          <th>car id</th>
+        </tr>
+        <tr>
+          <td><a href="#">Edit</a></td>
+          <td><a href="#">Delete</a></td>
+          <td align="center">1</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td><a href="#">Edit</a></td>
+          <td><a href="#">Delete</a></td>
+          <td align="center">2</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td><a href="#">Edit</a></td>
+          <td><a href="#">Delete</a></td>
+          <td align="center">3</td>
+          <td>33</td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+    </div>
+    <!-- browse -->
+    <div id="insert" style="display: block">
+      <form id="addSaleCars">
+        <legend><strong>Add Sale Cars</strong></legend>
+        <fieldset class="fields">
+          <label> sale id </label> <input type="text" name="sale-id" />
+          <label> car id</label> <input type="text" name="car-id" />
+        </fieldset>
+        <input
+          class="btn"
+          type="submit"
+          id="addSaleCars"
+          value="Add a sale car"
+        />
+        <input class="btn" type="button" value="cancel" />
+      </form>
+      <!--add new sale car-->
+    </div>
+    <!-- insert -->
+
+    <p>&nbsp;</p>
+    <div id="update" style="display: block">
+      <form id="updateSaleCars">
+        <legend><strong>Update sale car</strong></legend>
+        <fieldset class="fields">
+          <label> sale id </label> <input type="text" name="sale-id" />
+          <label> car id</label> <input type="text" name="car-id" />
+          <input type="text" name="sale-id" />
+        </fieldset>
+        <input
+          class="btn"
+          type="submit"
+          id="updateSaleCars"
+          value="Save Update Sale Cars"
+        />
+        <input class="btn" type="button" value="cancel" />
+      </form>
+    </div>
+    <!-- update -->
+    <p>&nbsp;</p>
+    <div id="delete" style="display: block">
+      <form id="deleteSaleCars">
+        <legend><strong>Delete Sale Cars</strong></legend>
+        <fieldset class="fields">
+          <p>Are you sure you wish to delete the following?</p>
+          <label>sale id: </label>
+          <label>car id: </label>
+        </fieldset>
+        <input
+          class="btn"
+          type="submit"
+          id="DeleteSalesCars"
+          value="Delete Sales Cars"
+        />
+        <input class="btn" type="button" value="cancel" />
+      </form>
+    </div>
+    <!-- delete -->
+  </body>
+</html>
